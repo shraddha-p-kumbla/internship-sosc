@@ -1,0 +1,10 @@
+import random
+
+def guess_number():
+   computer_guess = random.randint(1,10)
+   user_guess = int(input("Guess a number between 1 and 10:"))
+   if user_guess == computer_guess:
+      print("You won!")
+   else:
+      print(f"You lost! The computer guess was {computer_guess}.")
+guess_number()

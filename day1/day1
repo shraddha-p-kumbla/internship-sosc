@@ -1,0 +1,19 @@
+import secrets
+import string
+
+lowercase = string.ascii_lowercase
+#print(lowercase)
+uppercase = string.ascii_uppercase
+digit = string.digits
+specialCharacters='~!@#$%^&*()'
+
+
+length = int(input("Enter the length of the password:"))
+
+all = lowercase + uppercase + digit + specialCharacters 
+
+# print(all)
+
+password =''.join(secrets.choice(all) for i in range (length))
+
+print(password)
